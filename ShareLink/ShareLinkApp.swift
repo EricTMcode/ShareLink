@@ -11,7 +11,7 @@ import SwiftUI
 struct ShareLinkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StartTabView()
         }
     }
 }
