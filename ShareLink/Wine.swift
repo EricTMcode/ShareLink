@@ -31,6 +31,17 @@ struct Wine {
         return formatter.string(from: NSNumber(value: price)) ?? "n/a"
     }
     
+    var description: String {
+"""
+Winery: \(winery)
+Variety: \(variety)
+Name: \(name)
+\(flag) \(region)
+\(localPrice)
+⭐️ \(rating)
+"""
+    }
+    
     static var sample: Wine {
         Wine(label: "QwamQwmt.jpg",
              name: "Qwam Qwnt",
